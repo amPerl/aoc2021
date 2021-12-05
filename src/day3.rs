@@ -11,7 +11,7 @@ use std::collections::HashSet;
 /// As a result, a positive value indicates that '1' bits were more popular and vice versa, with a balance of 0 meaning equal amounts of '0' and '1' bits were present.
 ///
 /// Given the example input values:
-/// ```
+/// ```txt
 /// 000111
 /// 001100
 /// 111000
