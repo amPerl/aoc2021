@@ -37,9 +37,9 @@ fn solve(lines: Vec<((usize, usize), (usize, usize))>, axis_aligned: bool) -> us
             continue;
         }
 
-        let step_count = x_diff.abs().max(y_diff.abs());
+        let step_count = x_diff.abs().max(y_diff.abs()) + 1;
 
-        for i in 0..=step_count {
+        for i in 0..step_count {
             let x = (x1 as isize + i * x_step) as usize;
             let y = (y1 as isize + i * y_step) as usize;
             *map.entry((x, y)).or_default() += 1;
